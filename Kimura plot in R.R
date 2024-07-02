@@ -5,8 +5,6 @@
 ### last updated June 2024
 
 
-###################### FIX #############################
-
 # Install necessary packages 
 # install.packages("dplyr")
 # install.packages("readr")
