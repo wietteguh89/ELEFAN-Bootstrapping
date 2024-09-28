@@ -33,7 +33,7 @@ boot_data <- data %>%
   unnest(splits) %>%                                    # Unnest the list-column containing the bootstrap samples
   group_by(id) %>%                                      # Group the data by the bootstrap sample ID
   group_split() %>%                                     # Split the grouped data into a list of data frames, one for each bootstrap sample
-  bind_cols()                                          # Combine the list of data frames into a single data frame
+  bind_cols()                                           # Combine the list of data frames into a single data frame
 
 # Write the bootstrapped data to an Excel file
 write_xlsx(boot_data, path = "Output_boot_data.xlsx")
